@@ -21,7 +21,7 @@ function staticLoadPlaces() {
                 lng: -74.064948
             },
             source: './assets/halloween/chocolate.glb',
-            scale: '0.2 0.2 0.2'
+            scale: '0.05 0.05 0.05'
         },
         {
             name: 'Articuno',
