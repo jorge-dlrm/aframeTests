@@ -30,7 +30,7 @@ function staticLoadPlaces() {
                         lng: actualLong
                     },
                     source: './assets/halloween/chocolate.glb',
-                    scale: '0.02 0.02 0.02'
+                    scale: '0.01 0.01 0.01'
                 }
             ];
 
@@ -48,7 +48,7 @@ function staticLoadPlaces() {
                 }
 
                 //The random for the long with te sign and everything
-                if (randomSignLat == 1) {
+                if (randomSignLong == 1) {
                     asset.location.lng += Math.floor(Math.random() * 100) / 1000000;
                 } else {
                     asset.location.lng -= Math.floor(Math.random() * 100) / 1000000;
