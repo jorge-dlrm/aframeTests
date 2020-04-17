@@ -33,7 +33,7 @@ function staticLoadPlaces() {
                     scale: '0.008 0.008 0.008'
                 },
                 {
-                    name: 'Pumpking',
+                    name: 'Pumpkin',
                     location: {
                         lat: actualLat,
                         lng: actualLong
