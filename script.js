@@ -11,11 +11,14 @@ function staticLoadPlaces() {
     const actualLat = 0;
     const actualLong = 0;
     if (navigator.geolocation) {
+        console.log('Geo Supported');
         navigator.geolocation.getCurrentPosition((position) => {
             console.log('The Position: ', position);
             actualLat = position.coords.latitude;
             actualLong = position.coords.longitude;
             console.log('Lat: ', actualLat , '--- Long: ', actualLong);
+        }, err => {
+            console.log(err);
         });
     }
     return [
