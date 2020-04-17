@@ -39,7 +39,7 @@ function staticLoadPlaces() {
                         lng: actualLong
                     },
                     source: './assets/halloween/pumpkin.glb',
-                    scale: '0.08 0.08 0.08'
+                    scale: '0.15 0.15 0.15'
                 }
             ];
 
