@@ -8,8 +8,8 @@ function locate() {
 }
 
 function staticLoadPlaces() {
-    const actualLat = '';
-    const actualLong = '';
+    let actualLat = 0.0;
+    let actualLong = 0.0;
     if (navigator.geolocation) {
         console.log('Geo Supported');
         navigator.geolocation.getCurrentPosition((position) => {
