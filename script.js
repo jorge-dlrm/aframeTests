@@ -12,14 +12,26 @@ function staticLoadPlaces() {
             actualLat = position.coords.latitude;
             actualLong = position.coords.longitude;
             console.log('Lat: ', actualLat , '--- Long: ', actualLong);
+            let random1 = Math.floor((Math.random() * 10)/100000);
+            let random2 = Math.floor((Math.random() * 10)/100000);
+            let random3 = Math.floor((Math.random() * 10)/100000);
+            let random4 = Math.floor((Math.random() * 10)/100000);
+
+            console.log('the randoms--------')
+            console.log('1. random1= ', random1)
+            console.log('2. random2= ', random2)
+            console.log('3. random3= ', random3)
+            console.log('4. random4= ', random4)
+            console.log('END randoms--------')
+
             let places = [
                 {
                     name: 'Magnemite',
                     location: {
                         //lat: 4.694047,
-                        lat: actualLat + Math.floor((Math.random() * 10)/100000),
+                        lat: actualLat + random1,
                         //lng: -74.065458
-                        lng: actualLong + Math.floor((Math.random() * 10)/100000)
+                        lng: actualLong + random2
                     },
                     source: './assets/magnemite/scene.gltf',
                     scale: '0.3 0.3 0.3'
@@ -28,9 +40,9 @@ function staticLoadPlaces() {
                     name: 'Chocolate',
                     location: {
                         lat: 4.692978,
-                        lat: actualLat + Math.floor((Math.random() * 10)/100000),
+                        lat: actualLat + random3,
                         //lng: -74.064948
-                        lng: actualLong + Math.floor((Math.random() * 10)/100000)
+                        lng: actualLong + random4
                     },
                     source: './assets/halloween/chocolate.glb',
                     scale: '0.05 0.05 0.05'
