@@ -1,11 +1,6 @@
 window.onload = () => {
     let places = staticLoadPlaces();
-    renderPlaces(places);
 };
-
-function locate() {
-    
-}
 
 function staticLoadPlaces() {
     let actualLat = 0.0;
@@ -17,6 +12,7 @@ function staticLoadPlaces() {
             actualLat = position.coords.latitude;
             actualLong = position.coords.longitude;
             console.log('Lat: ', actualLat , '--- Long: ', actualLong);
+            renderPlaces(places);
         }, err => {
             console.log(err);
         });
