@@ -38,7 +38,7 @@ function staticLoadPlaces() {
                         lat: actualLat,
                         lng: actualLong
                     },
-                    source: './assets/halloween/pumpking.glb',
+                    source: './assets/halloween/pumpkin.glb',
                     scale: '0.01 0.01 0.01'
                 }
             ];
