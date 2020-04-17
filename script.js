@@ -8,8 +8,8 @@ function locate() {
 }
 
 function staticLoadPlaces() {
-    const actualLat = 0;
-    const actualLong = 0;
+    const actualLat = '';
+    const actualLong = '';
     if (navigator.geolocation) {
         console.log('Geo Supported');
         navigator.geolocation.getCurrentPosition((position) => {
@@ -25,29 +25,24 @@ function staticLoadPlaces() {
         {
             name: 'Magnemite',
             location: {
-                lat: 4.694047,
-                lng: -74.065458
+                //lat: 4.694047,
+                lat: actualLat + Math.floor((Math.random() * 10)/100000),
+                //lng: -74.065458
+                lng: actualLong + Math.floor((Math.random() * 10)/100000)
             },
             source: './assets/magnemite/scene.gltf',
-            scale: '0.5 0.5 0.5'
+            scale: '0.3 0.3 0.3'
         },
         {
             name: 'Chocolate',
             location: {
                 lat: 4.692978,
-                lng: -74.064948
+                lat: actualLat + Math.floor((Math.random() * 10)/100000),
+                //lng: -74.064948
+                lng: actualLong + Math.floor((Math.random() * 10)/100000)
             },
             source: './assets/halloween/chocolate.glb',
             scale: '0.05 0.05 0.05'
-        },
-        {
-            name: 'Articuno',
-            location: {
-                lat: 4.693688,
-                lng: -74.065302
-            },
-            source: './assets/articuno/scene.gltf',
-            scale: '0.2 0.2 0.2'
         }
     ];
 }
@@ -56,6 +51,7 @@ function renderPlaces(places) {
     let scene = document.querySelector('a-scene');
 
     places.forEach((place) => {
+        console.log('The place object: ', place);
         let latitude = place.location.lat;
         let longitude = place.location.lng;
 
