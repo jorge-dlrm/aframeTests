@@ -3,7 +3,21 @@ window.onload = () => {
     renderPlaces(places);
 };
 
+function locate() {
+    
+}
+
 function staticLoadPlaces() {
+    const actualLat = 0;
+    const actualLong = 0;
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition((position) => {
+            console.log('The Position: ', position);
+            actualLat = position.coords.latitude;
+            actualLong = position.coords.longitude;
+            console.log('Lat: ', actualLat , '--- Long: ', actualLong);
+        });
+    }
     return [
         {
             name: 'Magnemite',
