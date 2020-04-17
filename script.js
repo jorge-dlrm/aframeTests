@@ -42,16 +42,16 @@ function staticLoadPlaces() {
 
                 //The random for the lat with te sign and everything
                 if (randomSignLat == 1) {
-                    asset.location.lat = Math.floor(Math.random() * 100)/100000;
+                    asset.location.lat += Math.floor(Math.random() * 100)/100000;
                 } else {
-                    asset.location.lat = ((-1) * (Math.floor(Math.random() * 100)/100000));
+                    asset.location.lat += ((-1) * (Math.floor(Math.random() * 100)/100000));
                 }
 
                 //The random for the long with te sign and everything
                 if (randomSignLat == 1) {
-                    asset.location.long = Math.floor(Math.random() * 100)/100000;
+                    asset.location.lng += Math.floor(Math.random() * 100)/100000;
                 } else {
-                    asset.location.long = ((-1) * (Math.floor(Math.random() * 100)/100000));
+                    asset.location.lng += ((-1) * (Math.floor(Math.random() * 100)/100000));
                 }
             }
 
