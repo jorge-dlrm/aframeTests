@@ -12,10 +12,10 @@ function staticLoadPlaces() {
             actualLat = position.coords.latitude;
             actualLong = position.coords.longitude;
             console.log('Lat: ', actualLat , '--- Long: ', actualLong);
-            let random1 = Math.floor((Math.random() * 10)/100000);
-            let random2 = Math.floor((Math.random() * 10)/100000);
-            let random3 = Math.floor((Math.random() * 10)/100000);
-            let random4 = Math.floor((Math.random() * 10)/100000);
+            let random1 = Math.floor(Math.random() * 10)/100000;
+            let random2 = Math.floor(Math.random() * 10)/100000;
+            let random3 = Math.floor(Math.random() * 10)/100000;
+            let random4 = Math.floor(Math.random() * 10)/100000;
 
             console.log('the randoms--------')
             console.log('1. random1= ', random1)
