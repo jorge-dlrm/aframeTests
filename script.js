@@ -30,7 +30,7 @@ function staticLoadPlaces() {
                         lng: actualLong
                     },
                     source: './assets/halloween/chocolate.glb',
-                    scale: '0.002 0.002 0.002'
+                    scale: '0.008 0.008 0.008'
                 },
                 {
                     name: 'Pumpking',
@@ -38,7 +38,7 @@ function staticLoadPlaces() {
                         lat: actualLat,
                         lng: actualLong
                     },
-                    source: './assets/halloween/punpking.glb',
+                    source: './assets/halloween/pumpking.glb',
                     scale: '0.01 0.01 0.01'
                 }
             ];
