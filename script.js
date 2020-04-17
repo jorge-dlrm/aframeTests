@@ -11,7 +11,7 @@ function staticLoadPlaces() {
             console.log('The Position: ', position);
             actualLat = position.coords.latitude;
             actualLong = position.coords.longitude;
-            console.log('Lat: ', actualLat , '--- Long: ', actualLong);
+            console.log('Lat: ', actualLat, '--- Long: ', actualLong);
 
             let places = [
                 {
@@ -42,16 +42,16 @@ function staticLoadPlaces() {
 
                 //The random for the lat with te sign and everything
                 if (randomSignLat == 1) {
-                    asset.location.lat += Math.floor(Math.random() * 100)/100000;
+                    asset.location.lat += Math.floor(Math.random() * 100) / 1000000;
                 } else {
-                    asset.location.lat += ((-1) * (Math.floor(Math.random() * 100)/100000));
+                    asset.location.lat -= Math.floor(Math.random() * 100) / 1000000;
                 }
 
                 //The random for the long with te sign and everything
                 if (randomSignLat == 1) {
-                    asset.location.lng += Math.floor(Math.random() * 100)/100000;
+                    asset.location.lng += Math.floor(Math.random() * 100) / 1000000;
                 } else {
-                    asset.location.lng += ((-1) * (Math.floor(Math.random() * 100)/100000));
+                    asset.location.lng -= Math.floor(Math.random() * 100) / 1000000;
                 }
             }
 
